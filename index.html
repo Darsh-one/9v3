@@ -54,8 +54,6 @@ if (req.readyState == 4){
     <button class="button" onMouseOver="msgs.innerHTML='GoldHen v2.2.5B7 - By SiSTRo'"; onmouseout="msgs.innerHTML='Mostapha Darsh PS4 (900 V3)'" onclick="load_goldhen3(); return false">GoldHen V2.2.5B7</button>
     <br>
     <div style=font-size:18px>PAYLOADS</div>
-    <button class="button" onMouseOver="msgs.innerHTML='Receives .Bin payloads on port 9020 via NetCat'"; onmouseout="msgs.innerHTML='Mostapha Darsh PS4 (900 V3)'" onclick="load_binloader(); return false">Binloader-9020</button>
-    <a href="payload.html#p0=mira.js"><button class="button"  onMouseOver="msgs.innerHTML='Receives .Bin payloads on port 9021 via NetCat aka Sleirsgoevy Mira Loader'"; onmouseout="msgs.innerHTML='Mostapha Darsh PS4 (900 V3)'" type="button">Binloader-9021</button></a>
     <button class="button" onMouseOver="msgs.innerHTML='Orbis Tool Box v1190 - By OSM'"; onmouseout="msgs.innerHTML='Mostapha Darsh PS4 (900 V3)'" onclick="load_orbistoolbox(); return false">Orbis-Tool-Box</button>
     <button class="button" onMouseOver="msgs.innerHTML='App-2-Usb - Original Version By Stooged / 9.00 Port By Al Azif'"; onmouseout="msgs.innerHTML='Mostapha Darsh PS4 (900 V3)'" onclick="load_app2usb(); return false">App-2-Usb</button>
     <button class="button" onMouseOver="msgs.innerHTML='App Dumper Only v1.8 - Original Version By xVortex / 9.00 Port Al Azif'"; onmouseout="msgs.innerHTML='Mostapha Darsh PS4 (900 V3)'" onclick="load_dumper(); return false">App-Dumper</button>
@@ -154,12 +152,6 @@ exec_type = "payload";
 toogle_payload();
 }
 
-function load_binloader(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Bin Loader on Port 9020 ...";
-LoadedMSG="Awaiting For Payload on Port 9020...";
-exec_type = "binloader";
-setTimeout(poc, 1500);
-}
 
 function load_webactivator(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading PSN Account Offline Web Activator ...</h1>";
